@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Kids TV Shows</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{
+      width: 100vw;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+      line-height: 1.4;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1 {
+      padding-top: 40px; font-size: 50px; 
+      margin-bottom: 0px; 
+    }
+    h4{
+      margin-top: 0px;
+    }
+    header {
+      padding: 20px 20px 8px 20px;
+      position: fixed;
+      top: 0;
+      display: grid;  
+      grid-gap:5px;
+      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-areas: 
+       "nt mn mn sb . . . "; 
+      background-color: #141414;
+      width: 100%;
+      margin-bottom: 0px;  
+    }
+    .wrapper {
+      margin: 0;
+      padding: 0;
+    }
+    .netflixLogo {
+      grid-area: nt;
+      object-fit: cover;
+      width: 100px;
+      max-height: 100%;
+      padding-left: 30px;   
+    }
+    .netflixLogo img {  
+      height: 35px;     
+    }
+    .sub-nav {
+      grid-area: sb;
+      padding: 0 40px 0 40px;
+    }
+    .sub-nav a {
+      color: white;
+      border: 1px solid white;
+      border-radius: 5px;
+      text-decoration: none;
+      margin: 5px;
+      padding: 5px;
+    }
+    .sub-nav a:hover {
+      color: #686868;
+    }
+    select{
+      border: 1px solid white;
+      border-radius: 5px;
+      text-decoration: none;
+      padding: 5px;
+    }
+    .main-container {
+      padding: 50px;
+    }
+    .box {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(6, minmax(100px, 1fr));
+      margin-top: 40px;
+    }
+    .box a {
+      transition: transform .3s;  
+    }
+    .box a:hover {
+      transition: transform .3s;
+      -ms-transform: scale(1.4);
+      -webkit-transform: scale(1.4);  
+      transform: scale(1.4);
+    }
+    .box img {
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="netflixLogo">
+        <img src="logo.png" alt="Logo Image">
+      </div>
+      <nav class="sub-nav">
+        <select>
+          <option>English</option>
+          <option>Hindi</option>
+        </select>
+        <a href="Sign In.html">SIGN IN</a>        
+      </nav>      
+    </header>
+    
+    <section class="main-container" >
+      <div>
+          <h1>Kids TV Shows</h1>
+          <h4>Think of the children...or at least let them watch some cool TV shows. <br>Superheroes, super friendships, super fun–these cartoon and live-<br>action shows have it all.</h4>
+          <div class="box">
+            <a href="https://www.netflix.com/in/title/81422836"><img src="Kids Images/k1.jpg" alt=""></a>
+            <a href="https://www.netflix.com/in/title/80104199"><img src="Kids Images/k2.jpg" alt=""></a>
+            <a href="https://www.netflix.com/in/title/80211492"><img src="Kids Images/k3.jpg" alt=""></a>
+            <a href="https://www.netflix.com/in/title/81099976"><img src="Kids Images/k4.jpg" alt=""></a>
+            <a href="https://www.netflix.com/in/title/81279322"><img src="Kids Images/k5.jpg" alt=""></a>
+            <a href="https://www.netflix.com/in/title/80097036"><img src="Kids Images/k6.jpg" alt=""></a>
+    
+            <a href="https://www.netflix.com/in/title/70171947"><img src="Kids Images/k7.jpg" alt=""></a>
+            <a href="https://www.netflix.com/in/title/81193032"><img src="Kids Images/k8.jpg" alt=""></a>
+            <a href="https://www.netflix.com/in/title/81725736"><img src="Kids Images/k9.jpg" alt=""></a>
+            <a href="https://www.netflix.com/in/title/70286901"><img src="Kids Images/k10.jpg" alt=""></a>
+            <a href="https://www.netflix.com/in/title/80142000"><img src="Kids Images/k11.jpg" alt=""></a>
+            <a href="https://www.netflix.com/in/title/70177043"><img src="Kids Images/k12.jpg" alt=""></a>        
+          </div>
+      </div>
+</body>
+</html>
